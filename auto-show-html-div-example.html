@@ -1,0 +1,288 @@
+<! DOCTYPE html>
+<html>
+<head>
+   <title>Bootstrap Tutorial</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/auto-show-html-div-1.0.css">
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script>
+   // activate tootltip
+	$(document).ready(function(){
+	  $('[data-toggle="tooltip"]').tooltip();
+	});
+	</script>
+</head>
+
+<body style="padding: 60px">
+	
+<nav class = "navbar navbar-default navbar-fixed-top" role = "navigation">
+   <div class = "navbar-header">
+      <a class = "navbar-brand" href = "tutorial.html"> <span class="glyphicon glyphicon-education"></span> &nbsp;Bootstrap Tutorial</a>
+   </div>
+   <div>
+      <ul class = "nav navbar-nav">
+      </ul>
+   </div>
+</nav>
+
+<div class = "container" style = "background-color: white; ">
+
+<h1 class="well">Buttons</h1>
+
+<h4><code>&lt;button type="button" class="btn"&gt;</code></h4>
+
+<div style = "background-color: white; ">
+<h2 class="well">Button Styles</h2>
+	Anything that is given a class of <code>.btn</code> will inherit the default look of a gray button with rounded corners.<br>
+	We can change color adding the class:<br>
+	<ul>
+	<li><code>.btn-primary</code>.</li>primary action
+	<li><code>.btn-success</code>.</li>successful or positive action
+	<li><code>.btn-info</code>.</li>informational alert messages
+	<li><code>.btn-warning</code>.</li>caution should be taken with this action
+	<li><code>.btn-danger</code>.</li>dangerous or potentially negative action
+	<li><code>.btn-link</code>.</li>Deemphasize a button by making it look like a link while maintaining button behavior
+	</ul>
+</div>
+<!-- ********************** AUTO SHOW div CODE no button required ******************************************  -->
+<div class="auto-show-html-div">
+<button type = "button" class = "btn btn-default">Default Button</button>
+<button type = "button" class = "btn btn-primary">Primary Button</button>
+<button type = "button" class = "btn btn-success">Success Button</button>
+<button type = "button" class = "btn btn-info">Info Button</button>
+<button type = "button" class = "btn btn-warning">Warning Button</button>
+<button type = "button" class = "btn btn-danger">Danger Button</button>
+<button type = "button" class = "btn btn-link">Link Button</button>
+</div>
+
+<div style = "background-color: white; ">
+<h2 class="well">Button Sizes</h2>
+	Change the size adding the class:<br>
+	<ul>
+	<li><code>.btn-lg</code>.</li>large
+	<li><code>.btn-sm</code>.</li>small
+	<li><code>.btn-xs</code>.</li>extra small
+	<li><code>.btn-block</code>.</li>block level: span the full width of a parent
+	</ul>
+</div>
+<!-- ********************** AUTO SHOW div CODE no button required ******************************************  -->
+<div class="auto-show-html-div">
+	<button type = "button" class = "btn btn-default btn-lg">Large Button</button>
+	<button type = "button" class = "btn btn-default ">Default Button</button>
+	<button type = "button" class = "btn btn-default btn-sm">Small Button</button>
+	<button type = "button" class = "btn btn-default btn-xs">Xs Button</button>
+	<button type = "button" class = "btn btn-default btn-block">Block Level Button</button>
+</div>
+
+<div style = "background-color: white; ">
+<h2 class="well">Button State</h2>
+	<ul>
+	<li><code>.active</code>.</li>Active: Buttons will appear pressed (with a darker background, darker border, and inset shadow)
+	<li><code>disabled="disabled" </code>.</li>When you disable a button, it will fade in color by 50%, and lose the gradient.
+	</ul>
+</div>
+<!-- ********************** AUTO SHOW div CODE no button required ******************************************  -->
+<div class="auto-show-html-div">
+	<button type = "button" class = "btn btn-default ">Default Button</button>
+	<button type = "button" class = "btn btn-default active" active>Active Button</button>
+	<button type = "button" class = "btn btn-default " disabled=disabled>Disabled Button</button>
+</div>
+
+<div style = "background-color: white; ">
+<h2 class= "well">Button Groups</h2>
+	Bootstrap allows you to group a series of buttons together (on a single line) in a button group<br>
+	<ul>
+	<li>Use a <code class="w3-codespan">&lt;div&gt;</code> element with class <code class="w3-codespan">.btn-group</code> to create a button group</li>
+	<li>Add class <code>.btn-group-lg|sm|xs</code> to size all buttons in the group</li>
+	<li>To span the entire width of the screen, use the <code class="w3-codespan">.btn-group-justified</code> class 
+	with <code class="w3-codespan">&lt;a&gt;</code> elements of class <code>.btn:</code></li>
+	</ul>
+</div>
+<!-- ********************** AUTO SHOW div CODE no button required ******************************************  -->
+<div class="auto-show-html-div">
+	 <div class="btn-group btn-group-lg">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <button type="button" class="btn btn-primary">Sony</button>
+	</div> 
+	 <div class="btn-group">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <button type="button" class="btn btn-primary">Sony</button>
+	</div> 
+	 <div class="btn-group btn-group-sm">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <button type="button" class="btn btn-primary">Sony</button>
+	</div> 
+	 <div class="btn-group btn-group-xs">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <button type="button" class="btn btn-primary">Sony</button>
+	</div> 
+	<br><br>
+	<div class="btn-group btn-group-justified">
+	  <a href="#" class="btn btn-primary">Apple</a>
+	  <a href="#" class="btn btn-primary">Samsung</a>
+	  <a href="#" class="btn btn-primary">Sony</a>
+	</div> 
+</div>
+
+<div style = "background-color: white; ">
+<h2 class="well">Button Toolbar</h2>
+	You can wrap more button groups in a button toolbar
+</div>
+<!-- ********************** AUTO SHOW div CODE no button required ******************************************  -->
+<div class="auto-show-html-div">
+	  <div class = "btn-toolbar" role = "toolbar">
+	   <div class = "btn-group">
+	      <button type = "button" class = "btn btn-default">Button 1</button>
+	      <button type = "button" class = "btn btn-default">Button 2</button>
+	      <button type = "button" class = "btn btn-default">Button 3</button>
+	   </div>
+	   <div class = "btn-group">
+	      <button type = "button" class = "btn btn-default">Button 4</button>
+	      <button type = "button" class = "btn btn-default">Button 5</button>
+	      <button type = "button" class = "btn btn-default">Button 6</button>
+	   </div>
+	   <div class = "btn-group">
+	      <button type = "button" class = "btn btn-default">Button 7</button>
+	      <button type = "button" class = "btn btn-default">Button 8</button>
+	      <button type = "button" class = "btn btn-default">Button 9</button>
+	   </div>
+	  </div>
+</div>
+
+<div style = "background-color: white; ">
+<h2 class="well">Vertical Button Groups</h2>
+	<ul>
+	<li>Use the class <code class="w3-codespan">.btn-group-vertical</code> to create a vertical button group</li>
+	<li>Add class <code>.btn-group-lg|sm|xs</code> to size all buttons in the group</li>
+	</ul>
+	</div>
+<!-- ********************** AUTO SHOW div CODE no button required ******************************************  -->
+<div class="auto-show-html-div">
+	 <div class="btn-group-vertical btn-group-lg">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <button type="button" class="btn btn-primary">Sony</button>
+	</div> 
+	 <div class="btn-group-vertical ">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <button type="button" class="btn btn-primary">Sony</button>
+	</div> 
+	 <div class="btn-group-vertical btn-group-sm">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <button type="button" class="btn btn-primary">Sony</button>
+	</div> 
+	 <div class="btn-group-vertical btn-group-xs">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <button type="button" class="btn btn-primary">Sony</button>
+	</div> 
+</div>
+
+<div style = "background-color: white; ">
+<h2 class="well">Drop down menu button</h2>
+	<ul>
+	<li>Use a <code>.btn-group</code> with a button <code>class="btn ... dropdown-toggle" data-toggle="dropdown"</code> 
+	and a list of links to create a drop-down menu button</li>
+	<li>Split the button into two buttons using <code>span class="caret"</code> as button for drop-down menu 
+	(put a <code>&amp;nbsp;</code> after the <code>&lt;/span&gt;</code> to preserve height)</li>
+	<li>Nest button groups to create groups with drop-down menus</li>
+	<li>Use glyphicons to decorate your buttons (or to make a graphic button)</li>
+	</ul>
+</div>
+<!-- ********************** AUTO SHOW div CODE no button required ******************************************  -->
+<div class="auto-show-html-div">
+	  <div class="btn-group">
+	    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+	    Sony <span class="caret"></span></button>
+	    <ul class="dropdown-menu" role="menu">
+	      <li><a href="#">Tablet</a></li>
+	      <li><a href="#">Smartphone</a></li>
+	    </ul>
+	 </div>
+	 <div class="btn-group" >
+	    <button type="button" class="btn btn-primary ">Sony</button>
+	    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+	      <span class="caret"></span>&nbsp;
+	    </button>
+	    <ul class="dropdown-menu" role="menu">
+	      <li><a href="#">Tablet</a></li>
+	      <li><a href="#">Smartphone</a></li>
+	    </ul>
+	 </div>
+	 <div class="btn-group">
+	  <button type="button" class="btn btn-primary">Apple</button>
+	  <button type="button" class="btn btn-primary">Samsung</button>
+	  <div class="btn-group">
+	    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+	    Sony <span class="caret"></span></button>
+	    <ul class="dropdown-menu" role="menu">
+	      <li><a href="#">Tablet</a></li>
+	      <li><a href="#">Smartphone</a></li>
+	    </ul>
+	  </div>
+	 </div> 
+	 <div class="btn-group">
+	  <button type="button" class="btn btn-success">Apple</button>
+	  <button type="button" class="btn btn-warning">Samsung</button>
+	  <div class="btn-group">
+	    <button type="button" class="btn btn-danger ">Sony</button> 
+	    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+	    	<span class="caret"></span>&nbsp;
+	    </button>
+	    <ul class="dropdown-menu" role="menu">
+	      <li><a href="#">Tablet</a></li>
+	      <li><a href="#">Smartphone</a></li>
+	    </ul>
+	  </div>
+	 </div> 
+	 <button type="button" class="btn btn-default">
+	  <span class="glyphicon glyphicon-search"></span> Search 
+	 </button>
+	 <button type="button" class="btn btn-default">Search
+	  <span class="glyphicon glyphicon-search"></span>  
+	 </button>
+	 <button type="button" class="btn btn-default">
+	  <span class="glyphicon glyphicon-search"></span>&nbsp; 
+	</button>
+	
+	<div col-sm-12 style="background-color: #dedef8; height: 10px"></div>
+	
+	 <div class="btn-group">
+		  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-fast-backward"></span>&nbsp;</button>
+		  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-backward"></span>&nbsp;</button>
+		  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-play"></span>&nbsp;</button>
+		  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-pause"></span>&nbsp;</button>
+		  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-stop"></span>&nbsp;</button>
+		  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-forward"></span>&nbsp;</button>
+		  <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-fast-forward"></span>&nbsp;</button>
+	 </div> 
+</div>
+
+</div>
+
+<script src="js/auto-show-html-div-1.0.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

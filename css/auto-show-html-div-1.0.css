@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+
+/*
+* auto-show-html-div-1.0.css
+*
+* author: Claudio Militello
+*
+* to be used with: auto-show-html-div-1.0.js (Jquery 3 needed)
+*
+*	Include in your html/jsp file this .css, Jquery 3 and the .js file to be used with this .css  
+*	Make a div of class .auto-show-html-div and js will create a button in the left bottom corner of your div. When you press
+*   this button a new div with the original html code of .auto-show-html-div slides down. Press button again to hide it.
+*
+*/
+.auto-show-html-div {
+	margin: auto; 
+    border: 1px solid black; 
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 5px; 
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: #dedef8
+}
+.display-code-div {
+	display: none;
+	position: relative; 
+	margin: auto; 
+    border: 1px solid black; 
+    padding: 10px;
+    border-radius: 5px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #e3ffb0
+}
+.show-html-btn {
+	position: relative; 
+	margin-top: 0px;
+
+}
